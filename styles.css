@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+    transition: 0.3s;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(244, 241, 241);
+    font-family: 'Poppins', sans-serif;
+    color:rgb(57, 57, 57);
+  }
+  
+h1 {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 300;
+    margin: 10px 0;
+  }
+
+h2 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 300;
+    margin: 10px 0;
+  }
+
+p {
+    margin: 0px;
+    font-size: 20px;
+}
+
+a {
+    color: salmon;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.dark a {
+    color: rgb(202, 49, 49);
+}
+  
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+.switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(54, 56, 54);
+    position: relative;
+}
+
+.btn-down {
+    transition: all 1s ease-in-out;
+}
+/* Dark theme and toggle *********************************/
+
+.flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    transition: 0.5s;
+    top: 5px;
+    left: 5px;
+    box-shadow: 
+        inset 4px 4px 4px rgb(255, 255, 255),
+        inset -4px -4px -4px rgb(195 193 198 /90%);
+}
+
+.dark {
+    background-color: black;   
+    transition: 0.5s; 
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+.dark .flicker {
+    transform: translateX(40px);
+}
+
+.dark >* {
+    color: white;
+}
+
+.main {
+    height: 80vh;
+}
+
+.main-text {
+    padding: 30px;
+    margin-bottom: 100px;
+  }
+
+/* squares *********************************/
+.square {
+    width: 98%;
+    margin: 1%;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.dark .square {
+    background-color: rgb(17, 17, 17);
+}
+
+
+.sub-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 100px 30px;
+    background-color: grey;
+    transition: 0.5s;
+}
+
+.dark footer {
+    background-color: rgb(4, 4, 4);
+}
+
+
+
+
+
+
+/* media query ***********************************/
+
+@media only screen and (min-width: 970px) {
+    .square {
+        width: 48%;
+        margin: 1%;
+        height: 600px;
+    }
+    
+}
