@@ -197,10 +197,23 @@ header {
     flex-wrap: wrap;
 }
 
+
+
 #servicios {
-    background-image: url(/img/legaldocuments.jpeg);
+    
     background-size: cover;
 }
+
+#nuestros-clientes{
+    background-image: url(/img/logos.jpg);
+    background-size: cover;
+}
+
+#quienes-somos{
+    background-image: url(/img/joseluis.jpg);
+    background-size: cover;
+}
+
 
 footer {
     display: flex;
@@ -230,6 +243,7 @@ footer {
         margin: 1%;
         height: 600px;
     }
+
     
 }
 
